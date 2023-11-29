@@ -1,0 +1,47 @@
+/* h1 {
+    color: red
+}
+
+#h2id {
+    color: black;
+    background-color: aqua;
+}
+
+.h3class {
+    color: aqua;
+    background-color: black;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.info span {
+    color: red;
+}
+
+.parCl span {
+    color: burlywood;
+}
+
+.info #spanCl {
+    color: blue;
+}
+
+* {
+    font-weight: bold;
+    color:brown;
+} */
+*{
+    color:green;        /* genelden özele doğru kodlama olmalı*/
+}
+
+h1{
+    color:blue !important;      /* bu renk geçerli olur.*/
+    color:red;                  /* her zaman  alttaki geçerli olur */
+}
+
+#logo{
+    color:brown;
+    color:blue;
+}
