@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        p.highlight::before{
+         content: "L" ;                  /* başına eklemek istediğin şeyler*/
+         font-weight: bold;
+         width: 55px;
+         font-size: 65px;
+        }
+        p.highlight::after{
+        content: "Tıkla" ;                  /* sonuna eklemek istediğin şeyler*/
+         font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus reprehenderit nulla repellat natus alias perspiciatis doloremque blanditiis vero suscipit. Neque numquam, quidem voluptatem illum error rerum enim exercitationem modi.</p>
+</body>
+</html>
