@@ -127,7 +127,103 @@ ul{
     padding: 10px;
     border-bottom: 1px solid #ccc;
  }
+ .card-container{
+    display: flex;
+    margin-top: 25%;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+.card{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: transform 0.3 ease-in-out ;
+}
+
+.card img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+.card h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:darkred;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: background-color 0.3 ease-in-out;
+}
+
+
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 25%;
+}
  
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background: #79A7A8;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+#contact button[type="submit"]:hover {
+    background: #355C7D;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+ 
+
 
 
 
