@@ -54,14 +54,22 @@ body{
     font-size: 40px;
     letter-spacing: 4px;
     font-weight: 100;
+    
 }
 .box h4{
+    padding: 3px;
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 3px;            /* harflerin arasındaki boşluk miktarı ayarı  */
+    color:cadetblue;
+}
+.box h4:hover{
+    transform: scale(0.9); 
 }
 .box p{
+    padding: 2px;
     text-align: justify;           /* iki yana yaslı   */
+    color:black;
 }
 ul{
     margin: 0;
@@ -80,6 +88,47 @@ ul{
 .box li a:hover{
     color: #b9b9b9;
 }
+.projects-table{
+    margin: 78px;
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.projects-table th{
+    background-color:cadetblue;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+ }
+ .projects-table tbody tr:hover{
+    background-color: #e5e5e5;
+}
+.projects-table td{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+ }
+ .bootcamps-table{
+    margin: 50px;
+    float: right;
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.bootcamps-table th{
+    background-color:cadetblue;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+ }
+ .bootcamps-table tbody tr:hover{
+    background-color: #e5e5e5;
+}
+.bootcamps-table td{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+ }
+ 
+
 
 
 
@@ -103,6 +152,7 @@ ul{
 
 
 footer{
+    padding: 10px;
     text-align: center;
 }
 
