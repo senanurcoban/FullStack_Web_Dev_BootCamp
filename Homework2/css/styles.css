@@ -220,9 +220,68 @@ ul{
 #contact button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+/* Responsive Ayarları Yapılmalı*/
+/* Tablet */
+@media(max-width: 768px){
+    header{
+        background-color: brown;
+        color: #fff;
+        padding: 20px;
+    }
+    .navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        margin: 0 10px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+    
+    }
+    .navbar ul li a:hover{
+        background-color: #a49494;
+    }
+}
 
 
- 
+/*Telefon*/
+@media (max-width: 576px) {
+    header{
+        background-color: blue;
+        color: #fff;
+        padding: 20px;
+    }
+    .navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        margin: 0 10px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+    
+    }
+    .navbar ul li a:hover{
+        background-color: #a49494;
+    }
+}
+
 
 
 
