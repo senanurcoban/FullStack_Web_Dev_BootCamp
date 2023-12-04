@@ -1,0 +1,108 @@
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+        background-image: url("/Homework2/img/background.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        margin: 0;
+        padding: 0;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+   margin: 0 10px;
+   padding: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.box{
+    width:440px ;
+    background: #6b5858;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;               /* transform süresini ayarlamak için */ 
+    cursor: pointer;               /* resim üzerine gelindiğinde imleç tasarımı değişmesi için */
+}
+.box img:hover{
+    transform: scale(0.9); 
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h4{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;            /* harflerin arasındaki boşluk miktarı ayarı  */
+}
+.box p{
+    text-align: justify;           /* iki yana yaslı   */
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+    display: inline-block;
+    margin: 8px;
+    list-style: none;
+}
+.box li a{
+    color: white;
+    font-size: 50px;
+    transition: all  ease-in-out 250ms;
+}
+.box li a:hover{
+    color: #b9b9b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+}
+
