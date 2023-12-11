@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPNETLESSONS", "ASPNETLESSONS", "{0548631A-87F7-4DEB-9FB2-BC6958852D38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampApp", "ASPNETLESSONS\BootcampApp\BootcampApp.csproj", "{B1DAA446-758F-4F4E-A968-ACCA314FCF01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1DAA446-758F-4F4E-A968-ACCA314FCF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DAA446-758F-4F4E-A968-ACCA314FCF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DAA446-758F-4F4E-A968-ACCA314FCF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DAA446-758F-4F4E-A968-ACCA314FCF01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1DAA446-758F-4F4E-A968-ACCA314FCF01} = {0548631A-87F7-4DEB-9FB2-BC6958852D38}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7CDA421-B12F-4A01-98F7-564427FDB804}
+	EndGlobalSection
+EndGlobal
