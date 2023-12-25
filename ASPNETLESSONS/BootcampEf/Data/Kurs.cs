@@ -4,7 +4,8 @@ namespace BootcampEf.Data
     {
         public int KursId { get; set; }
         public string? Baslik { get; set; }
-       
+        public int OgretmenId{get; set;}                   // Her kursa bir öğretmenin katılması şartı için.
+        public Ogretmen Ogretmen {get; set;} = null!;
         public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit>();
     }
 }

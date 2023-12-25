@@ -14,7 +14,7 @@ namespace BootcampEf.Controllers
         }
          public async Task<IActionResult> Index()
         {
-            var kurslar = await _context.Kurslar.ToListAsync();
+            var kurslar = await _context.Kurslar.Include(k=>k.Ogretmen).ToListAsync();
             return View(kurslar);
         }
 
@@ -25,11 +25,16 @@ namespace BootcampEf.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Kurs model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(KursViewModel model)
         {
-            _context.Kurslar.Add(model);
+            if(ModelState.IsValid){
+            _context.Kurslar.Add(new Kurs(){KursId = model.KursId, Baslik = model.Baslik, OgretmenId = model.OgretmenId});
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+            }
+             ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
+            return View(model);
         }
 
         [HttpGet]
