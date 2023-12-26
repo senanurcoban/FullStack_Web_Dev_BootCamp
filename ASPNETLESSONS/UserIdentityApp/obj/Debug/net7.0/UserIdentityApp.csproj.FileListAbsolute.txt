@@ -1,0 +1,8 @@
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.RazorAssemblyInfo.cache
+C:\Users\ASUS\Desktop\techcareer_task\ASPNETLESSONS\UserIdentityApp\obj\Debug\net7.0\UserIdentityApp.RazorAssemblyInfo.cs
