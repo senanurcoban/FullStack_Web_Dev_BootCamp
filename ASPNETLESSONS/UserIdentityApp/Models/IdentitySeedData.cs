@@ -14,12 +14,12 @@ namespace UserIdentityApp.Models
             if(context.Database.GetAppliedMigrations().Any()){        // içerisinde veri var mı yok mu kontrol et ! ona göre işlemler devam etsin. Yoksa yukarıda tanımladığım admin değerlerimi ata.
                 context.Database.Migrate();
             }
-            var UserManager = app.ApplicationServices.CreateScope().ServiceProvider. GetRequiredService<UserManager<IdentityUser>>();                     // kontrol sağlaması yapıldı.
+            var UserManager = app.ApplicationServices.CreateScope().ServiceProvider. GetRequiredService<UserManager<AppUser>>();                     // kontrol sağlaması yapıldı.
 
             var user = await UserManager.FindByIdAsync(adminUser);
              if(user == null){              // herhangi bir user bilgisi yoksa
-                user = new IdentityUser{
-                    UserName=adminUser,
+                user = new AppUser{
+                    FullName="Ahmet Kaya",
                     Email = "admin@ahmetkaya.com",
                     PhoneNumber = "12345678912"
                 };

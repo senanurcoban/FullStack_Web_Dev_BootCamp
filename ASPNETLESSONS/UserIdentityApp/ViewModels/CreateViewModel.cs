@@ -6,7 +6,7 @@ namespace UserIdentityApp.ViewModels
      // Yeni eklemek istenilen kullancının kayıt aşamasında hangi bilgilerini almalıyız?
 
         [Required]
-        public string UserName { get; set; } = string.Empty;
+        public string FullName { get; set; } = string.Empty;
 
         [Required]
         [EmailAddress]
