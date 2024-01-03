@@ -21,8 +21,9 @@ namespace UserIdentityApp.Controllers
          public IActionResult Index (){
             return View(_userManager.Users);
          }
-
-        public IActionResult Create (){
+ 
+ // Bu create metotlarını burdan keserek AccountController da tanımladık.
+       /* public IActionResult Create (){  
             return View();
          }
 
@@ -44,7 +45,7 @@ namespace UserIdentityApp.Controllers
           }
 
             return View();
-         }
+         }*/
           
            public async Task<IActionResult> Edit(string id){
 
