@@ -8,6 +8,7 @@ using UserIdentityApp.Models;
 
 namespace UserIdentityApp.Controllers
 {
+     [Authorize]
      public class UsersController : Controller{
 
         private UserManager<AppUser> _userManager;
@@ -30,7 +31,7 @@ namespace UserIdentityApp.Controllers
         // async mantığı: yapılan işlem devam ederken arada olması gereken işlemi yapıp tekrar yapılması gereken işe devam ediyor.
 
           if(ModelState.IsValid){
-            var user=new AppUser{UserName=model.Email,Email=model.Email,FullName=model.FullName};
+            var user=new AppUser{UserName=model.UserName,Email=model.Email,FullName=model.FullName};
             IdentityResult result =await _userManager.CreateAsync(user,model.Password);
 
             if(result.Succeeded){
@@ -83,6 +84,11 @@ namespace UserIdentityApp.Controllers
                         await _userManager.AddPasswordAsync(user, model.Password);
                     }
                     if(result.Succeeded){
+                      // ROL atama işlemi için
+                        await _userManager.RemoveFromRolesAsync(user, await _userManager.GetRolesAsync(user));
+                        if(model.SelectedRoles != null){
+                            await _userManager.AddToRolesAsync(user,model.SelectedRoles);
+                        }
                         return RedirectToAction("Index");
                     }
                     foreach(IdentityError err in result.Errors){
