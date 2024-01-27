@@ -8,7 +8,7 @@ using UserIdentityApp.Models;
 
 namespace UserIdentityApp.Controllers
 {
-     [Authorize]
+    [Authorize(Roles = "admin")]
      public class UsersController : Controller{
 
         private UserManager<AppUser> _userManager;
@@ -19,6 +19,9 @@ namespace UserIdentityApp.Controllers
             _roleManager = roleManager;
         }
          public IActionResult Index (){
+             if(!User.IsInRole("admin")){
+                return RedirectToAction("Login","Account");
+            }
             return View(_userManager.Users);
          }
  

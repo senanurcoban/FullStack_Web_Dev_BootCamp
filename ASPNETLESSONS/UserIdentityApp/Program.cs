@@ -4,7 +4,12 @@ using UserIdentityApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(i=>
+                            new SmtpEmailSender(builder.Configuration["EmailSender:Host"],
+                                                builder.Configuration.GetValue<int>("EmailSender:Port"),
+                                                builder.Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+                                                builder.Configuration["EmailSender:UserName"],
+                                                builder.Configuration["EmailSender:Password"]));
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<IdentityContext>(
